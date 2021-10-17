@@ -1,6 +1,5 @@
 # Inventory
 
-
 [![current version](https://img.shields.io/badge/current_version-1.0-green)](#Inventory)
 
 This is a simple inventory app for Android that was created as part
@@ -56,9 +55,9 @@ use [Trello](https://trello.com/).*
 
 ## Project statistics
 
-[![wakatime](https://wakatime.com/badge/github/VitasSalvantes/android-basics-kotlin-bus-schedule-app.svg)](https://wakatime.com/badge/github/VitasSalvantes/android-basics-kotlin-bus-schedule-app)
+[![wakatime](https://wakatime.com/badge/github/VitasSalvantes/android-basics-kotlin-inventory-app.svg)](https://wakatime.com/badge/github/VitasSalvantes/android-basics-kotlin-inventory-app)
 
-See more on [WakaTime](https://wakatime.com/@VitasSalvantes/projects/lhlfwuotmt).
+See more on [WakaTime](https://wakatime.com/@VitasSalvantes/projects/ftueygcdtf).
 
 ## How to install
 
