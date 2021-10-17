@@ -37,11 +37,10 @@ class AddItemFragment : Fragment() {
 
     private val viewModel: InventoryViewModel by activityViewModels {
         InventoryViewModelFactory(
-            (activity?.application as InventoryApplication).database
-                .itemDao()
+            (activity?.application as InventoryApplication).database.itemDao()
         )
     }
-
+    
     lateinit var item: Item
 
     // Binding object instance corresponding to the fragment_add_item.xml layout
@@ -79,7 +78,6 @@ class AddItemFragment : Fragment() {
         val action = AddItemFragmentDirections.actionAddItemFragmentToItemListFragment()
         findNavController().navigate(action)
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.saveAction.setOnClickListener {
@@ -94,7 +92,7 @@ class AddItemFragment : Fragment() {
         super.onDestroyView()
         // Hide keyboard.
         val inputMethodManager = requireActivity().getSystemService(INPUT_METHOD_SERVICE) as
-                InputMethodManager
+            InputMethodManager
         inputMethodManager.hideSoftInputFromWindow(requireActivity().currentFocus?.windowToken, 0)
         _binding = null
     }

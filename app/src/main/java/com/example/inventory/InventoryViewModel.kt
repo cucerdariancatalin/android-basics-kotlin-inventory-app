@@ -9,6 +9,7 @@ import kotlinx.coroutines.launch
 import java.lang.IllegalArgumentException
 
 class InventoryViewModel(private val itemDao: ItemDao) : ViewModel() {
+
     private fun insertItem(item: Item) {
         viewModelScope.launch { itemDao.insert(item) }
     }
@@ -23,6 +24,7 @@ class InventoryViewModel(private val itemDao: ItemDao) : ViewModel() {
         val newItem = getNewItemEntry(itemName, itemPrice, itemCount)
         insertItem(newItem)
     }
+
 
     fun isEntryValid(itemName: String, itemPrice: String, itemCount: String): Boolean {
         if (itemName.isBlank() || itemPrice.isBlank() || itemCount.isBlank()) {

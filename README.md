@@ -1,7 +1,8 @@
 Inventory - Starter Code
 ==================================
 
-Starter code for Android Basics in Kotlin.
+Intermediate version of the solution code for Android Basics in Kotlin.
+Codelab: Android Jetpack - Room.
 
 Introduction
 ------------
