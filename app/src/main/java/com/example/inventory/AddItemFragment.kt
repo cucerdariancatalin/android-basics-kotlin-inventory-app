@@ -67,6 +67,19 @@ class AddItemFragment : Fragment() {
         )
     }
 
+    private fun updateItem() {
+        if (isEntryValid()) {
+            viewModel.updateItem(
+                this.navigationArgs.itemId,
+                this.binding.itemName.text.toString(),
+                this.binding.itemPrice.text.toString(),
+                this.binding.itemCount.text.toString()
+            )
+            val action = AddItemFragmentDirections.actionAddItemFragmentToItemListFragment()
+            findNavController().navigate(action)
+        }
+    }
+
     private fun addNewItem() {
         if (isEntryValid()) {
             viewModel.addNewItem(
@@ -86,6 +99,8 @@ class AddItemFragment : Fragment() {
             itemName.setText(item.name, TextView.BufferType.SPANNABLE)
             itemPrice.setText(price, TextView.BufferType.SPANNABLE)
             itemCount.setText(item.quantity.toString(), TextView.BufferType.SPANNABLE)
+
+            saveAction.setOnClickListener { updateItem() }
         }
     }
 
