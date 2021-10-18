@@ -20,6 +20,10 @@ class InventoryViewModel(private val itemDao: ItemDao) : ViewModel() {
         quantity = itemCount.toInt()
     )
 
+    private fun updateItem(item: Item) {
+        viewModelScope.launch { itemDao.update(item) }
+    }
+
     fun addNewItem(itemName: String, itemPrice: String, itemCount: String) {
         val newItem = getNewItemEntry(itemName, itemPrice, itemCount)
         insertItem(newItem)
@@ -27,6 +31,13 @@ class InventoryViewModel(private val itemDao: ItemDao) : ViewModel() {
 
     fun retrieveItem(id: Int): LiveData<Item> {
         return itemDao.getItem(id).asLiveData()
+    }
+
+    fun sellItem(item: Item) {
+        if (item.quantity > 0) {
+            val newItem = item.copy(quantity = item.quantity - 1)
+            updateItem(newItem)
+        }
     }
 
 
