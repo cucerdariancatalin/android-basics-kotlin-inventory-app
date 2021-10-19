@@ -1,4 +1,3 @@
-
 # Inventory
 
 [![current version](https://img.shields.io/badge/current_version-1.0-green)](#Inventory)
@@ -19,7 +18,8 @@ Google.
 
 ## How does it work
 
-...
+The user opens the app and sees the list of things. The user can edit and delete every item or add
+new item.
 
 ## Screenshots
 
@@ -29,9 +29,25 @@ At the beginning:
 
 <img src="screenshots/screenshot_start.png" alt="screenshot_start" style="width:240px;height:500px;">
 
+After click on the add button:
+
+<img src="screenshots/screenshot_add.png" alt="screenshot_add" style="width:240px;height:500px;">
+
 After click on the item:
 
-...
+<img src="screenshots/screenshot_details.png" alt="screenshot_details" style="width:240px;height:500px;">
+
+After click on the "SELL" button:
+
+<img src="screenshots/screenshot_sell.png" alt="screenshot_sell" style="width:240px;height:500px;">
+
+After click on the "DELETE" button:
+
+<img src="screenshots/screenshot_delete.png" alt="screenshot_delete" style="width:240px;height:500px;">
+
+After click on the edit button:
+
+<img src="screenshots/screenshot_edit.png" alt="screenshot_edit" style="width:240px;height:500px;">
 
 ## Technologies
 
@@ -49,7 +65,7 @@ After click on the item:
 
 ## Development progress
 
-Development of the project began and completed on **October 17, 2021**.
+Development of the project began on **October 17, 2021** and completed on **October 19, 2021**.
 
 *Since I am developing this project mainly alone, I see no reason to
 use [Trello](https://trello.com/).*
