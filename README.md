@@ -1,37 +1,74 @@
-Inventory - Starter Code
-==================================
 
-Intermediate version of the solution code for Android Basics in Kotlin.
-Codelab: Android Jetpack - Room.
+# Inventory
 
-Introduction
-------------
+[![current version](https://img.shields.io/badge/current_version-1.0-green)](#Inventory)
 
-This app is an stater code for an Inventory tracking app. Demos how to add, update, sell, and delete
- items from the local database.
-This app demonstrated
-the use of Android Jetpack component [Room](https://developer.android.com/training/data-storage/room) database.  
+This is a simple inventory app for Android that was created as part
+of [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course) by
+Google.
 
-The app also leverages [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel),
-[LiveData](https://developer.android.com/topic/libraries/architecture/livedata),
-[Flow](https://developer.android.com/kotlin/flow),
-[View Binding](https://developer.android.com/topic/libraries/view-binding),
-and [Navigation](https://developer.android.com/topic/libraries/architecture/navigation/)
-with the SafeArgs plugin for parameter passing between fragments.
+## Table of contents
 
-Pre-requisites
---------------
+- [How does it work](#How-does-it-work)
+- [Screenshots](#Screenshots)
+- [Technologies](#Technologies)
+- [Development progress](#Development-progress)
+- [Project statistics](#Project-statistics)
+- [How to install](#How-to-install)
+- [How to contribute](#How-to-contribute)
 
-You need to know:
-- How to create and use fragments.
-- How to navigate between fragments, and use safeArgs to pass data between fragments.
-- How to use architecture components including ViewModel, LiveData, and LiveData transformations.
-- How to use coroutines for long-running tasks.
-- RecyclerView and adapters
-- SQLite database and the SQLite query language
+## How does it work
 
+...
 
-Getting Started
----------------
+## Screenshots
 
-1. Download and run the app.
+*All screenshots are relevant for version 1.0*
+
+At the beginning:
+
+<img src="screenshots/screenshot_start.png" alt="screenshot_start" style="width:240px;height:500px;">
+
+After click on the item:
+
+...
+
+## Technologies
+
+- The programming
+  language [Kotlin](https://kotlinlang.org/) ([AdoptOpenJDK version 11.0.10](https://adoptopenjdk.net/))
+  was chosen for development.
+
+- Development was carried out in [Android Studio](https://developer.android.com/studio/).
+
+- [Figma](https://www.figma.com/) was used to prototype the user interface.
+
+- [WakaTime](https://wakatime.com/) was used to track activity.
+
+- [Microsoft To Do](https://todo.microsoft.com/tasks/) was used to schedule tasks.
+
+## Development progress
+
+Development of the project began and completed on **October 17, 2021**.
+
+*Since I am developing this project mainly alone, I see no reason to
+use [Trello](https://trello.com/).*
+
+## Project statistics
+
+[![wakatime](https://wakatime.com/badge/github/VitasSalvantes/android-basics-kotlin-inventory-app.svg)](https://wakatime.com/badge/github/VitasSalvantes/android-basics-kotlin-inventory-app)
+
+See more on [WakaTime](https://wakatime.com/@VitasSalvantes/projects/ftueygcdtf).
+
+## How to install
+
+1. Download the repository code as a zip archive
+2. Unpack the zip archive
+3. Open the unpacked project with Android Studio
+4. Run the project
+
+## How to contribute
+
+The project was created as part
+of [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course) by
+Google and does not provide for contribution.
